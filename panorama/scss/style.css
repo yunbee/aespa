@@ -1,0 +1,340 @@
+/* reset css */
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+img {
+  border: 0px;
+}
+
+/* font */
+@font-face {
+  font-family: "aespa";
+  src: url(../font/aespa_Regular.ttf);
+}
+
+/* common */
+body {
+  background-color: #000;
+  font: 17px/1.4 "aespa";
+  color: #ddd;
+}
+
+body .wrap {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  -webkit-perspective: 1300px;
+          perspective: 1300px;
+}
+
+body .wrap > video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+}
+
+body .wrap #circle {
+  position: absolute;
+  width: 600px;
+  height: 800px;
+  left: 50%;
+  top: 50%;
+  margin-left: -300px;
+  margin-top: -400px;
+  -webkit-animation: panorama linear 30s infinite;
+          animation: panorama linear 30s infinite;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+body .wrap #circle article {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+body .wrap #circle article .inner {
+  width: 100%;
+  height: 100%;
+}
+
+body .wrap #circle article .inner > div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 50px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.8;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .wrap #circle article .inner > div:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+body .wrap #circle article.item1 {
+  -webkit-transform: rotateY(0deg) translateZ(-573px);
+          transform: rotateY(0deg) translateZ(-573px);
+}
+
+body .wrap #circle article.item1 .inner div {
+  width: 290px;
+  height: 254px;
+  float: left;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+body .wrap #circle article.item1 .inner div:nth-of-type(odd) {
+  margin-right: 20px;
+}
+
+body .wrap #circle article.item1 .inner div i {
+  color: lightcyan;
+  font-size: 100px;
+  opacity: 0.7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .wrap #circle article.item1 .inner div h2 {
+  margin-top: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .wrap #circle article.item1 .inner div:hover i {
+  text-shadow: 0px 0px 10px #ddd1e3;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 1;
+}
+
+body .wrap #circle article.item1 .inner div:hover h2 {
+  text-shadow: 0px 0px 10px #ddd1e3;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 1;
+}
+
+body .wrap #circle article.item2 {
+  -webkit-transform: rotateY(60deg) translateZ(-573px);
+          transform: rotateY(60deg) translateZ(-573px);
+}
+
+body .wrap #circle article.item2 .inner div h2 {
+  font: bold 30px/1;
+  color: lightcyan;
+}
+
+body .wrap #circle article.item2 .inner div img {
+  width: 100%;
+  margin: 20px 0px 40px 0px;
+}
+
+body .wrap #circle article.item2 .inner div h3 {
+  color: lightcyan;
+  margin-bottom: 10px;
+}
+
+body .wrap #circle article.item2 .inner div p {
+  font-size: 35px/1.3;
+}
+
+body .wrap #circle article.item2 .inner div:hover h2, body .wrap #circle article.item2 .inner div:hover h3 {
+  text-shadow: 0px 0px 10px #ddd1e3;
+}
+
+body .wrap #circle article.item3 {
+  -webkit-transform: rotateY(120deg) translateZ(-573px);
+          transform: rotateY(120deg) translateZ(-573px);
+}
+
+body .wrap #circle article.item3 .inner div {
+  width: 290px;
+  height: 390px;
+  float: left;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+body .wrap #circle article.item3 .inner div:nth-of-type(odd) {
+  margin-right: 20px;
+}
+
+body .wrap #circle article.item3 .inner div img {
+  width: 100%;
+}
+
+body .wrap #circle article.item3 .inner div h2 {
+  margin-top: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .wrap #circle article.item3 .inner div:hover h2 {
+  text-shadow: 0px 0px 10px #ddd1e3;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 1;
+}
+
+body .wrap #circle article.item4 {
+  -webkit-transform: rotateY(180deg) translateZ(-573px);
+          transform: rotateY(180deg) translateZ(-573px);
+}
+
+body .wrap #circle article.item4 .inner div {
+  width: 290px;
+  height: 254px;
+  float: left;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+body .wrap #circle article.item4 .inner div:nth-of-type(odd) {
+  margin-right: 20px;
+}
+
+body .wrap #circle article.item4 .inner div i {
+  color: lightcyan;
+  font-size: 100px;
+  opacity: 0.7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .wrap #circle article.item4 .inner div h2 {
+  margin-top: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .wrap #circle article.item4 .inner div:hover i {
+  text-shadow: 0px 0px 10px #ddd1e3;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 1;
+}
+
+body .wrap #circle article.item4 .inner div:hover h2 {
+  text-shadow: 0px 0px 10px #ddd1e3;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 1;
+}
+
+body .wrap #circle article.item5 {
+  -webkit-transform: rotateY(240deg) translateZ(-573px);
+          transform: rotateY(240deg) translateZ(-573px);
+}
+
+body .wrap #circle article.item5 .inner div h2 {
+  font: bold 30px/1;
+  color: lightcyan;
+}
+
+body .wrap #circle article.item5 .inner div img {
+  width: 100%;
+  margin: 20px 0px 40px 0px;
+}
+
+body .wrap #circle article.item5 .inner div h3 {
+  color: lightcyan;
+  margin-bottom: 10px;
+}
+
+body .wrap #circle article.item5 .inner div p {
+  font-size: 35px/1.3;
+}
+
+body .wrap #circle article.item5 .inner div:hover h2, body .wrap #circle article.item5 .inner div:hover h3 {
+  text-shadow: 0px 0px 10px #ddd1e3;
+}
+
+body .wrap #circle article.item6 {
+  -webkit-transform: rotateY(300deg) translateZ(-573px);
+          transform: rotateY(300deg) translateZ(-573px);
+}
+
+body .wrap #circle article.item6 .inner div {
+  width: 290px;
+  height: 390px;
+  float: left;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+body .wrap #circle article.item6 .inner div:nth-of-type(odd) {
+  margin-right: 20px;
+}
+
+body .wrap #circle article.item6 .inner div img {
+  width: 100%;
+}
+
+body .wrap #circle article.item6 .inner div h2 {
+  margin-top: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .wrap #circle article.item6 .inner div:hover h2 {
+  text-shadow: 0px 0px 10px #ddd1e3;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 1;
+}
+
+@-webkit-keyframes panorama {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes panorama {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
